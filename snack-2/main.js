@@ -1,4 +1,4 @@
-// prompt per inserire le parole
+// Prompt per inserire le parole
 let word1 = prompt("Inserisci parola 1");
 let word2 = prompt("Inserisci parola 2");
 
@@ -8,11 +8,16 @@ let longWord;
 if (word1.length < word2.length) {
     shortWord = word1;
     longWord = word2;
-} else {
+    console.log("La parola più corta è: " + shortWord);
+    console.log("La parola più lunga è: " + longWord);
+} else if (word1.length == word2.length) {
+    console.log("le parole sono uguali");
+}
+else {
     shortWord = word2;
     longWord = word1;
+    console.log("La parola più corta è: " + shortWord);
+    console.log("La parola più lunga è: " + longWord);
 }
 
-// Stampare il risultato a video
-console.log("La parola più corta è: " + shortWord);
-console.log("La parola più lunga è: " + longWord);
+
